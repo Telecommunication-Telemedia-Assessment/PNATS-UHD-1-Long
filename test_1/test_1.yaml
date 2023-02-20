@@ -1,0 +1,1809 @@
+srcList:
+  SRC20001: ALEXA65-GreigFraser-London-showreel-WL_2m_7000-117000.avi   # 24 fps
+  #SRC20003: Breaking-rules_2m_22000-144000.avi   # 24 fps # replaced by SRC20034: AlbertSavoie_2m_120000-240000.avi
+  SRC20004: Breaking-rules_2m_60000-179000.avi   # 24 fps
+  SRC20006: Carnival_2m_122000-242000.avi   # 30 fps
+  SRC20008: Daydreamer-SDR_2m_269000-394000.avi   # 60 fps
+  SRC20009: eldorado_2m_5000-124000.avi   # 24 fps
+  SRC20010: Eye-of-the-Storm_2m_15000-135000.avi   # 24 fps
+  SRC20011: Fortnite_2m_0-120000.avi   # 60 fps
+  SRC20012: Fortnite_2m_120000-240000.avi   # 60 fps
+  SRC20013: GetLost4K-150794314_2m_40000-158000.avi   # 24 fps
+  SRC20014: Giftmord-SDR_2m_1000-123000.avi   # 60 fps
+  SRC20015: indoor-soccer_2m_1000-115000.avi   # 24 fps
+  SRC20018: life-untouched_2m_64000-179000.avi   # 60 fps
+  SRC20019: moment-of-intensity_2m_1000-120000.avi   # 60 fps
+  SRC20020: Moto7-TheMovie4K-148947021_2m_24000-142000.avi   # 24 fps
+  SRC20021: Moto9-TheMovie4K-243951638_2m_20000-140000.avi   # 24 fps
+  SRC20022: Naturestyle-HokkaidoJapan4K-151917579_2m_0-114000.avi   # 24 fps
+  #SRC20023: nocturne_2m_30000-150000.avi   # 60 fps # replaced by SRC20005: Carnival_2m_0-120000.avi
+  SRC20024: Overwatch_2m_0-120000.avi   # 60 fps
+  SRC20025: skateboarding_2m_35500-154000.avi   # 24 fps
+  SRC20028: Sparks_2m_71000-195000.avi   # 60 fps
+  SRC20029: Splitter-SDR_2m_217000-336000.avi   # 60 fps
+  SRC20031: unspoken-friend_2m_66000-195000.avi   # 24 fps
+  SRC20032: AdidasMoment_2m_0-114000.avi   # 24 fps
+  SRC20033: AlbertSavoie_2m_0-120000.avi   # 24 fps
+  SRC20035: GallowayAthletics_2m_5000-125000.avi   # 24 fps
+  SRC20034: AlbertSavoie_2m_120000-240000.avi # replacing SRC20003: Breaking-rules_2m_22000-144000.avi
+  SRC20005: Carnival_2m_0-120000.avi # replacing #SRC20023: nocturne_2m_30000-150000.avi
+  SRC29000: BigBuckBunny_2m_5200-125200.avi
+  SRC29001: TearsOfSteel_2m_253417-364458.avi
+  SRC29002: Meridian_2m_45000-165000.avi
+  SRC29003: ElFuente_2m_271000-391000.avi
+pvsList:
+- P2LVL18_SRC29000_HRC9900
+- P2LVL18_SRC29001_HRC9901
+- P2LVL18_SRC29002_HRC9902
+- P2LVL18_SRC29003_HRC9903
+- P2LVL18_SRC20008_HRC1800 #60fps
+- P2LVL18_SRC20012_HRC1800
+- P2LVL18_SRC20022_HRC1801 #30fps
+- P2LVL18_SRC20001_HRC1801
+- P2LVL18_SRC20025_HRC1802 #30fps
+#- P2LVL18_SRC20003_HRC1802 # replaced by - P2LVL18_SRC20034_HRC1802 
+- P2LVL18_SRC20034_HRC1802 # replacing - P2LVL18_SRC20003_HRC1802 
+
+- P2LVL18_SRC20019_HRC1803 #60fps
+#- P2LVL18_SRC20023_HRC1803 # replace by P2LVL18_SRC20005_HRC1803
+- P2LVL18_SRC20005_HRC1803 # replacing P2LVL18_SRC20023_HRC1803
+
+- P2LVL18_SRC20024_HRC1805 #60fps
+- P2LVL18_SRC20028_HRC1805
+
+- P2LVL18_SRC20011_HRC1806 #60fps
+- P2LVL18_SRC20029_HRC1806
+
+- P2LVL18_SRC20013_HRC1810 #30fps
+- P2LVL18_SRC20015_HRC1810
+
+- P2LVL18_SRC20010_HRC1816 #30fps
+- P2LVL18_SRC20021_HRC1816
+
+- P2LVL18_SRC20004_HRC1822 #30fps
+- P2LVL18_SRC20006_HRC1822
+
+- P2LVL18_SRC20014_HRC1828 #60fps
+- P2LVL18_SRC20018_HRC1828
+
+- P2LVL18_SRC20033_HRC1843 #30fps
+- P2LVL18_SRC20035_HRC1843
+
+- P2LVL18_SRC20031_HRC1849 #30fps
+- P2LVL18_SRC20032_HRC1849
+
+- P2LVL18_SRC20020_HRC1863 #30fps
+- P2LVL18_SRC20009_HRC1863
+
+codingList:
+  AC1:
+    encoder: libfdk_aac
+    type: audio
+  VC1800:
+    crf: 27
+    encoder: libvpx-vp9
+    iFrameInterval: 4
+    type: video
+  VC1801:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 1
+    maxrateFactor: 1.1
+    passes: 2
+    preset: medium
+    type: video
+  VC1802:
+    bufsizeFactor: 2.0
+    encoder: libvpx-vp9
+    iFrameInterval: 2
+    maxrateFactor: 1.1
+    passes: 2
+    speed: 1
+    type: video
+  VC1803:
+    bufsizeFactor: 2.0
+    encoder: libvpx-vp9
+    iFrameInterval: 4
+    maxrateFactor: 1.1
+    passes: 2
+    speed: 1
+    type: video
+  VC1805:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 2
+    maxrateFactor: 2.0
+    passes: 1
+    preset: faster
+    type: video
+  VC1806:
+    bufsizeFactor: 2.0
+    encoder: libx265
+    iFrameInterval: 6
+    maxrateFactor: 2.0
+    passes: 2
+    preset: medium
+    type: video
+  VC1810:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 5
+    maxrateFactor: 2.0
+    passes: 2
+    preset: medium
+    type: video
+  VC1816:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 6
+    maxrateFactor: 1.1
+    passes: 2
+    preset: faster
+    type: video
+  VC1822:
+    bufsizeFactor: 2.0
+    encoder: libx265
+    iFrameInterval: 2
+    maxrateFactor: 1.1
+    passes: 2
+    preset: medium
+    type: video
+  VC1828:
+    bufsizeFactor: 2.0
+    encoder: libvpx-vp9
+    iFrameInterval: 4
+    maxrateFactor: 2.0
+    passes: 2
+    speed: 2
+    type: video
+  VC1843:
+    bufsizeFactor: 2.0
+    encoder: libx265
+    iFrameInterval: 1
+    maxrateFactor: 2.0
+    passes: 2
+    preset: fast
+    type: video
+  VC1849:
+    crf: 30
+    encoder: libx265
+    iFrameInterval: 6
+    type: video
+  VC1863:
+    bufsizeFactor: 2.0
+    encoder: libvpx-vp9
+    iFrameInterval: 4
+    maxrateFactor: 2.0
+    passes: 2
+    speed: 3
+    type: video
+  VC9900:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 5
+    maxrateFactor: 1.1
+    passes: 2
+    preset: slow
+    type: video
+  VC9901:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 5
+    maxrateFactor: 2.0
+    passes: 1
+    preset: fast
+    type: video
+  VC9902:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 5
+    maxrateFactor: 1.1
+    passes: 1
+    preset: medium
+    type: video
+  VC9903:
+    bufsizeFactor: 2.0
+    encoder: libx264
+    iFrameInterval: 5
+    maxrateFactor: 2.0
+    passes: 2
+    preset: slow
+    type: video
+databaseId: P2LVL18
+postProcessingList:
+- codingHeight: 1440
+  codingWidth: 2560
+  displayHeight: 1440
+  displaySize: 5.5
+  displayWidth: 2560
+  type: mobile
+  viewingDistance: 6
+qualityLevelList:
+  Q0:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1440.0
+    index: 0
+    videoCodec: vp9
+    width: 2560
+  Q1:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1080.0
+    index: 0
+    videoCodec: vp9
+    width: 1920
+  Q10:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 1
+    videoBitrate: '2118.0'
+    videoCodec: h264
+    width: 854
+  Q100:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 9
+    videoBitrate: '3361.0'
+    videoCodec: vp9
+    width: 1280
+  Q101:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 9
+    videoBitrate: '5549.0'
+    videoCodec: vp9
+    width: 1920
+  Q102:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1440.0
+    index: 9
+    videoBitrate: '7738.0'
+    videoCodec: vp9
+    width: 2560
+  Q103:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 9
+    videoBitrate: '5549.0'
+    videoCodec: vp9
+    width: 1920
+  Q104:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 9
+    videoBitrate: '2267.0'
+    videoCodec: vp9
+    width: 960
+  Q105:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 9
+    videoBitrate: '1902.0'
+    videoCodec: vp9
+    width: 854
+  Q106:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 9
+    videoBitrate: '1173.0'
+    videoCodec: vp9
+    width: 640
+  Q107:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 9
+    videoBitrate: '1902.0'
+    videoCodec: vp9
+    width: 854
+  Q108:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 9
+    videoBitrate: '2267.0'
+    videoCodec: vp9
+    width: 960
+  Q109:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 9
+    videoBitrate: '1902.0'
+    videoCodec: vp9
+    width: 854
+  Q11:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 1
+    videoBitrate: '1380.0'
+    videoCodec: h264
+    width: 640
+  Q110:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 9
+    videoBitrate: '2267.0'
+    videoCodec: vp9
+    width: 960
+  Q111:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 9
+    videoBitrate: '1902.0'
+    videoCodec: vp9
+    width: 854
+  Q112:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 9
+    videoBitrate: '2267.0'
+    videoCodec: vp9
+    width: 960
+  Q113:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 9
+    videoBitrate: '3361.0'
+    videoCodec: vp9
+    width: 1280
+  Q114:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 9
+    videoBitrate: '1902.0'
+    videoCodec: vp9
+    width: 854
+  Q115:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 9
+    videoBitrate: '1173.0'
+    videoCodec: vp9
+    width: 640
+  Q116:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 10
+    videoBitrate: '15336.0'
+    videoCodec: h265
+    width: 2560
+  Q117:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 10
+    videoBitrate: '7033.0'
+    videoCodec: h265
+    width: 1920
+  Q118:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 10
+    videoBitrate: '1592.0'
+    videoCodec: h265
+    width: 960
+  Q119:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 10
+    videoBitrate: '7033.0'
+    videoCodec: h265
+    width: 1920
+  Q12:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 1
+    videoBitrate: '3896.0'
+    videoCodec: h264
+    width: 1280
+  Q120:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 10
+    videoBitrate: '15336.0'
+    videoCodec: h265
+    width: 2560
+  Q121:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 11
+    videoCodec: h265
+    width: 1280
+  Q122:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 11
+    videoCodec: h265
+    width: 1920
+  Q123:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 11
+    videoCodec: h265
+    width: 854
+  Q124:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 11
+    videoCodec: h265
+    width: 640
+  Q125:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 11
+    videoCodec: h265
+    width: 854
+  Q126:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 11
+    videoCodec: h265
+    width: 640
+  Q127:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 11
+    videoCodec: h265
+    width: 960
+  Q128:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 11
+    videoCodec: h265
+    width: 1920
+  Q129:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 11
+    videoCodec: h265
+    width: 1280
+  Q13:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 1
+    videoBitrate: '2529.0'
+    videoCodec: h264
+    width: 960
+  Q130:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 12
+    videoBitrate: '414.0'
+    videoCodec: vp9
+    width: 640
+  Q131:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 12
+    videoBitrate: '254.0'
+    videoCodec: vp9
+    width: 426
+  Q132:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 12
+    videoBitrate: '655.0'
+    videoCodec: vp9
+    width: 960
+  Q133:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 12
+    videoBitrate: '896.0'
+    videoCodec: vp9
+    width: 1280
+  Q134:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 12
+    videoBitrate: '655.0'
+    videoCodec: vp9
+    width: 960
+  Q135:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 12
+    videoBitrate: '1378.0'
+    videoCodec: vp9
+    width: 1920
+  Q136:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 12
+    videoBitrate: '896.0'
+    videoCodec: vp9
+    width: 1280
+  Q137:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 12
+    videoBitrate: '1860.0'
+    videoCodec: vp9
+    width: 2560
+  Q138:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 12
+    videoBitrate: '1378.0'
+    videoCodec: vp9
+    width: 1920
+  Q139:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1440.0
+    index: 13
+    videoBitrate: '20000'
+    videoCodec: h264
+    width: 2560
+  Q14:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 1
+    videoBitrate: '2118.0'
+    videoCodec: h264
+    width: 854
+  Q140:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 14
+    videoBitrate: '10000'
+    videoCodec: h264
+    width: 2560
+  Q141:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 14
+    videoBitrate: '800'
+    videoCodec: h264
+    width: 854
+  Q142:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 14
+    videoBitrate: '800'
+    videoCodec: h264
+    width: 854
+  Q143:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 14
+    videoBitrate: '250'
+    videoCodec: h264
+    width: 426
+  Q144:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 14
+    videoBitrate: '250'
+    videoCodec: h264
+    width: 426
+  Q145:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 15
+    videoBitrate: '10000'
+    videoCodec: h264
+    width: 1920
+  Q146:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 15
+    videoBitrate: '1000'
+    videoCodec: h264
+    width: 1280
+  Q147:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 15
+    videoBitrate: '1000'
+    videoCodec: h264
+    width: 1280
+  Q148:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 15
+    videoBitrate: '800'
+    videoCodec: h264
+    width: 854
+  Q149:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 16
+    videoBitrate: '800'
+    videoCodec: h264
+    width: 854
+  Q15:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 1
+    videoBitrate: '3896.0'
+    videoCodec: h264
+    width: 1280
+  Q16:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 1
+    videoBitrate: '2529.0'
+    videoCodec: h264
+    width: 960
+  Q17:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 1
+    videoBitrate: '3896.0'
+    videoCodec: h264
+    width: 1280
+  Q18:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 1
+    videoBitrate: '9000.0'
+    videoCodec: h264
+    width: 1920
+  Q19:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 2
+    videoBitrate: '1395.0'
+    videoCodec: vp9
+    width: 854
+  Q2:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 720.0
+    index: 0
+    videoCodec: vp9
+    width: 1280
+  Q20:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q21:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q22:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q23:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q24:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q25:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q26:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 2
+    videoBitrate: '1395.0'
+    videoCodec: vp9
+    width: 854
+  Q27:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q28:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q29:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q3:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1080.0
+    index: 0
+    videoCodec: vp9
+    width: 1920
+  Q30:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 2
+    videoBitrate: '1651.0'
+    videoCodec: vp9
+    width: 960
+  Q31:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 2
+    videoBitrate: '2419.0'
+    videoCodec: vp9
+    width: 1280
+  Q32:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q33:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 2
+    videoBitrate: '1395.0'
+    videoCodec: vp9
+    width: 854
+  Q34:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q35:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q36:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q37:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 2
+    videoBitrate: '1651.0'
+    videoCodec: vp9
+    width: 960
+  Q38:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 2
+    videoBitrate: '1395.0'
+    videoCodec: vp9
+    width: 854
+  Q39:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 2
+    videoBitrate: '2419.0'
+    videoCodec: vp9
+    width: 1280
+  Q4:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1440.0
+    index: 0
+    videoCodec: vp9
+    width: 2560
+  Q40:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 2
+    videoBitrate: '3956.0'
+    videoCodec: vp9
+    width: 1920
+  Q41:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 2
+    videoBitrate: '4500.0'
+    videoCodec: vp9
+    width: 2560
+  Q42:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 2
+    videoBitrate: '3956.0'
+    videoCodec: vp9
+    width: 1920
+  Q43:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 2
+    videoBitrate: '4500.0'
+    videoCodec: vp9
+    width: 2560
+  Q44:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 2
+    videoBitrate: '450.0'
+    videoCodec: vp9
+    width: 640
+  Q45:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 15
+    height: 240.0
+    index: 2
+    videoBitrate: '120.0'
+    videoCodec: vp9
+    width: 426
+  Q46:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 3
+    videoBitrate: '1650.0'
+    videoCodec: vp9
+    width: 960
+  Q47:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 3
+    videoBitrate: '1394.0'
+    videoCodec: vp9
+    width: 854
+  Q48:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 3
+    videoBitrate: '1650.0'
+    videoCodec: vp9
+    width: 960
+  Q49:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 3
+    videoBitrate: '1394.0'
+    videoCodec: vp9
+    width: 854
+  Q5:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 540.0
+    index: 0
+    videoCodec: vp9
+    width: 960
+  Q50:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 3
+    videoBitrate: '882.0'
+    videoCodec: vp9
+    width: 640
+  Q51:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q52:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 540.0
+    index: 4
+    videoBitrate: '750.0'
+    videoCodec: h264
+    width: 960
+  Q53:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q54:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 4
+    videoBitrate: '450.0'
+    videoCodec: h264
+    width: 854
+  Q55:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q56:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 4
+    videoBitrate: '130.0'
+    videoCodec: h264
+    width: 426
+  Q57:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q58:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 4
+    videoBitrate: '130.0'
+    videoCodec: h264
+    width: 426
+  Q59:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 4
+    videoBitrate: '450.0'
+    videoCodec: h264
+    width: 854
+  Q6:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 720.0
+    index: 0
+    videoCodec: vp9
+    width: 1280
+  Q60:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q61:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 4
+    videoBitrate: '450.0'
+    videoCodec: h264
+    width: 854
+  Q62:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 4
+    videoBitrate: '130.0'
+    videoCodec: h264
+    width: 426
+  Q63:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 4
+    videoBitrate: '130.0'
+    videoCodec: h264
+    width: 426
+  Q64:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q65:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 4
+    videoBitrate: '450.0'
+    videoCodec: h264
+    width: 854
+  Q66:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 4
+    videoBitrate: '250.0'
+    videoCodec: h264
+    width: 640
+  Q67:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 540.0
+    index: 4
+    videoBitrate: '750.0'
+    videoCodec: h264
+    width: 960
+  Q68:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 5
+    videoBitrate: '1220.0'
+    videoCodec: h265
+    width: 854
+  Q69:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1440.0
+    index: 5
+    videoBitrate: '15336.0'
+    videoCodec: h265
+    width: 2560
+  Q7:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 540.0
+    index: 0
+    videoCodec: vp9
+    width: 960
+  Q70:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1080.0
+    index: 5
+    videoBitrate: '7033.0'
+    videoCodec: h265
+    width: 1920
+  Q71:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 720.0
+    index: 5
+    videoBitrate: '2998.0'
+    videoCodec: h265
+    width: 1280
+  Q72:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 5
+    videoBitrate: '1592.0'
+    videoCodec: h265
+    width: 960
+  Q73:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 5
+    videoBitrate: '1220.0'
+    videoCodec: h265
+    width: 854
+  Q74:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 720.0
+    index: 5
+    videoBitrate: '2998.0'
+    videoCodec: h265
+    width: 1280
+  Q75:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 5
+    videoBitrate: '1592.0'
+    videoCodec: h265
+    width: 960
+  Q76:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 5
+    videoBitrate: '626.0'
+    videoCodec: h265
+    width: 640
+  Q77:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 6
+    videoBitrate: '1781.0'
+    videoCodec: h264
+    width: 960
+  Q78:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 6
+    videoBitrate: '3560.0'
+    videoCodec: h264
+    width: 1280
+  Q79:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 6
+    videoBitrate: '1334.0'
+    videoCodec: h264
+    width: 854
+  Q8:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 720.0
+    index: 0
+    videoCodec: vp9
+    width: 1280
+  Q80:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 6
+    videoBitrate: '655.0'
+    videoCodec: h264
+    width: 640
+  Q81:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 6
+    videoBitrate: '1781.0'
+    videoCodec: h264
+    width: 960
+  Q82:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 7
+    videoBitrate: '898.0'
+    videoCodec: h264
+    width: 960
+  Q83:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 7
+    videoBitrate: '698.0'
+    videoCodec: h264
+    width: 640
+  Q84:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 7
+    videoBitrate: '826.0'
+    videoCodec: h264
+    width: 854
+  Q85:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 7
+    videoBitrate: '3166.0'
+    videoCodec: h264
+    width: 2560
+  Q86:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 7
+    videoBitrate: '1912.0'
+    videoCodec: h264
+    width: 1920
+  Q87:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 7
+    videoBitrate: '1155.0'
+    videoCodec: h264
+    width: 1280
+  Q88:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 720.0
+    index: 8
+    videoBitrate: '650'
+    videoCodec: h265
+    width: 1280
+  Q89:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 8
+    videoBitrate: '1050.0'
+    videoCodec: h265
+    width: 1920
+  Q9:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 50/60
+    height: 1080.0
+    index: 0
+    videoCodec: vp9
+    width: 1920
+  Q90:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 8
+    videoBitrate: '1620.0'
+    videoCodec: h265
+    width: 2560
+  Q91:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 8
+    videoBitrate: '1050.0'
+    videoCodec: h265
+    width: 1920
+  Q92:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1440.0
+    index: 8
+    videoBitrate: '1620.0'
+    videoCodec: h265
+    width: 2560
+  Q93:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 1080.0
+    index: 8
+    videoBitrate: '1050.0'
+    videoCodec: h265
+    width: 1920
+  Q94:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 8
+    videoBitrate: '210.0'
+    videoCodec: h265
+    width: 426
+  Q95:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 240.0
+    index: 8
+    videoBitrate: '210.0'
+    videoCodec: h265
+    width: 426
+  Q96:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 8
+    videoBitrate: '270.0'
+    videoCodec: h265
+    width: 640
+  Q97:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 540.0
+    index: 8
+    videoBitrate: '500.0'
+    videoCodec: h265
+    width: 960
+  Q98:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 480.0
+    index: 8
+    videoBitrate: '300.0'
+    videoCodec: h265
+    width: 854
+  Q99:
+    audioBitrate: 512
+    audioCodec: aac
+    fps: 24/25/30
+    height: 360.0
+    index: 8
+    videoBitrate: '270.0'
+    videoCodec: h265
+    width: 640
+segmentDuration: 1
+syntaxVersion: 6
+type: long
+hrcList:
+  HRC1800:
+    audioCodingId: AC1
+    eventList:
+    - [Q0, 4.0]
+    - [Q1, 4.0]
+    - [Q2, 4.0]
+    - [Q3, 4.0]
+    - [Q4, 8.0]
+    - [Q5, 24.0]
+    - [Q6, 20.0]
+    - [Q7, 8.0]
+    - [Q8, 4.0]
+    - [Q9, 40.0]
+    segmentDuration: 4
+    videoCodingId: VC1800
+  HRC1801:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 4.0]
+    - [Q10, 10.0]
+    - [Q11, 10.0]
+    - [Q12, 20.0]
+    - [Q13, 10.0]
+    - [Q14, 10.0]
+    - [Q15, 20.0]
+    - [Q16, 10.0]
+    - [Q17, 10.0]
+    - [Q18, 20.0]
+    segmentDuration: 10
+    videoCodingId: VC1801
+  HRC1802:
+    audioCodingId: AC1
+    eventList:
+    - [Q19, 6.0]
+    - [Q20, 2.0]
+    - [Q21, 4.0]
+    - [Q22, 2.0]
+    - [Q23, 2.0]
+    - [Q24, 2.0]
+    - [Q25, 4.0]
+    - [Q26, 2.0]
+    - [Q27, 2.0]
+    - [Q28, 12.0]
+    - [stall, 2.0]
+    - [Q29, 2.0]
+    - [Q30, 2.0]
+    - [Q31, 2.0]
+    - [Q32, 2.0]
+    - [Q33, 2.0]
+    - [Q34, 2.0]
+    - [Q35, 2.0]
+    - [Q36, 2.0]
+    - [Q37, 10.0]
+    - [Q38, 2.0]
+    - [Q39, 2.0]
+    - [Q40, 2.0]
+    - [Q41, 2.0]
+    - [Q42, 2.0]
+    - [Q43, 2.0]
+    - [Q44, 2.0]
+    - [stall, 12.0]
+    - [Q45, 42.0]
+    segmentDuration: 2
+    videoCodingId: VC1802
+  HRC1803:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 7.0]
+    - [Q46, 84.0]
+    - [Q47, 4.0]
+    - [Q48, 4.0]
+    - [Q49, 4.0]
+    - [Q50, 24.0]
+    segmentDuration: 4
+    videoCodingId: VC1803
+  HRC1805:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 10.0]
+    - [Q51, 2.0]
+    - [Q52, 2.0]
+    - [Q53, 2.0]
+    - [Q54, 4.0]
+    - [Q55, 2.0]
+    - [Q56, 2.0]
+    - [Q57, 2.0]
+    - [Q58, 2.0]
+    - [Q59, 2.0]
+    - [Q60, 14.0]
+    - [Q61, 2.0]
+    - [Q62, 2.0]
+    - [stall, 11.0]
+    - [Q63, 4.0]
+    - [Q64, 2.0]
+    - [Q65, 72.0]
+    - [Q66, 2.0]
+    - [Q67, 2.0]
+    segmentDuration: 2
+    videoCodingId: VC1805
+  HRC1806:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 7.0]
+    - [Q68, 6.0]
+    - [Q69, 6.0]
+    - [Q70, 6.0]
+    - [Q71, 6.0]
+    - [Q72, 6.0]
+    - [Q73, 6.0]
+    - [Q74, 6.0]
+    - [Q75, 6.0]
+    - [stall, 14.0]
+    - [Q76, 72.0]
+    segmentDuration: 6
+    videoCodingId: VC1806
+  HRC1810:
+    audioCodingId: AC1
+    eventList:
+    - [Q77, 5.0]
+    - [Q78, 5.0]
+    - [Q79, 5.0]
+    - [Q80, 10.0]
+    - [Q81, 95.0]
+    segmentDuration: 5
+    videoCodingId: VC1810
+  HRC1816:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 10.0]
+    - [Q82, 6.0]
+    - [Q83, 6.0]
+    - [Q84, 6.0]
+    - [Q85, 6.0]
+    - [Q86, 6.0]
+    - [Q87, 90.0]
+    segmentDuration: 6
+    videoCodingId: VC1816
+  HRC1822:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 9.0]
+    - [Q88, 6.0]
+    - [Q89, 14.0]
+    - [Q90, 2.0]
+    - [Q91, 2.0]
+    - [Q92, 52.0]
+    - [Q93, 2.0]
+    - [Q94, 2.0]
+    - [Q95, 2.0]
+    - [Q96, 22.0]
+    - [Q97, 2.0]
+    - [Q98, 2.0]
+    - [Q99, 12.0]
+    segmentDuration: 2
+    videoCodingId: VC1822
+  HRC1828:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 10.0]
+    - [Q100, 4.0]
+    - [Q101, 4.0]
+    - [Q102, 4.0]
+    - [Q103, 32.0]
+    - [Q104, 16.0]
+    - [Q105, 4.0]
+    - [Q106, 4.0]
+    - [Q107, 4.0]
+    - [Q108, 4.0]
+    - [Q109, 8.0]
+    - [Q110, 4.0]
+    - [Q111, 4.0]
+    - [Q112, 4.0]
+    - [Q113, 4.0]
+    - [Q114, 8.0]
+    - [Q115, 12.0]
+    segmentDuration: 4
+    videoCodingId: VC1828
+  HRC1843:
+    audioCodingId: AC1
+    eventList:
+    - [Q116, 30.0]
+    - [Q117, 30.0]
+    - [Q118, 30.0]
+    - [Q119, 10.0]
+    - [Q120, 20.0]
+    segmentDuration: 10
+    videoCodingId: VC1843
+  HRC1849:
+    audioCodingId: AC1
+    eventList:
+    - [Q121, 6.0]
+    - [Q122, 60.0]
+    - [Q123, 6.0]
+    - [Q124, 6.0]
+    - [Q125, 12.0]
+    - [Q126, 6.0]
+    - [Q127, 12.0]
+    - [Q128, 6.0]
+    - [Q129, 6.0]
+    segmentDuration: 6
+    videoCodingId: VC1849
+  HRC1863:
+    audioCodingId: AC1
+    eventList:
+    - [Q130, 76.0]
+    - [Q131, 8.0]
+    - [Q132, 4.0]
+    - [Q133, 8.0]
+    - [Q134, 4.0]
+    - [Q135, 4.0]
+    - [Q136, 4.0]
+    - [Q137, 4.0]
+    - [Q138, 8.0]
+    segmentDuration: 4
+    videoCodingId: VC1863
+  HRC9900:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 1.0]
+    - [Q139, 120.0]
+    segmentDuration: 5
+    videoCodingId: VC9900
+  HRC9901:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 1.0]
+    - [Q140, 10.0]
+    - [Q141, 5.0]
+    - [stall, 12.0]
+    - [Q142, 5.0]
+    - [Q143, 5.0]
+    - [stall, 12.0]
+    - [Q144, 95.0]
+    segmentDuration: 5
+    videoCodingId: VC9901
+  HRC9902:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 1.0]
+    - [Q145, 10.0]
+    - [Q146, 10.0]
+    - [stall, 12.0]
+    - [Q147, 10.0]
+    - [Q148, 90.0]
+    segmentDuration: 5
+    videoCodingId: VC9902
+  HRC9903:
+    audioCodingId: AC1
+    eventList:
+    - [stall, 1.0]
+    - [Q149, 120.0]
+    segmentDuration: 5
+    videoCodingId: VC9903
