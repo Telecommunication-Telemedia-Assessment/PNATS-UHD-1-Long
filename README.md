@@ -43,6 +43,9 @@ Upon request we can also share the corresponding bitstreams of the videos.
 * `test_1`: mos, design and yaml file for test 1
 * `test_2`: mos, design and yaml file for test 2
 * `test_3`: mos, design and yaml file for test 3
+* `srcs/test*`: corresponding source videos used for the test
+* `avpvs/test*`: the corresponding compressed and converted videos used as stimuli in the tests; the conversion scales the videos to the native device resolution and framerate
+
 
 The yaml files are following the processing chain format of ITU-T P.NATS Phase 2 (see [processing-chain](https://github.com/pnats2avhd/processing-chain), [example-databases](https://github.com/pnats2avhd/example-databases)).
 
